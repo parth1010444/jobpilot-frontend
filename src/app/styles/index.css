@@ -5,13 +5,13 @@
   --font-display: "Sora", "IBM Plex Sans", ui-sans-serif, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
 
-  --color-canvas: #07080c;
-  --color-canvas-muted: #0b0d14;
-  --color-panel: #10131c;
-  --color-panel-hover: #161b28;
-  --color-elevated: #181d2b;
-  --color-line: rgb(255 255 255 / 0.08);
-  --color-line-strong: rgb(255 255 255 / 0.14);
+  --color-canvas: #08090f;
+  --color-canvas-muted: #0c0f18;
+  --color-panel: #141825;
+  --color-panel-hover: #1b2132;
+  --color-elevated: #1c2333;
+  --color-line: rgb(255 255 255 / 0.1);
+  --color-line-strong: rgb(255 255 255 / 0.18);
   --color-ink: #eef1f8;
   --color-ink-muted: #9aa3b8;
   --color-ink-faint: #6b7388;
@@ -65,15 +65,15 @@
 
   .surface-grid {
     background-image:
-      linear-gradient(to right, rgb(255 255 255 / 0.035) 1px, transparent 1px),
-      linear-gradient(to bottom, rgb(255 255 255 / 0.035) 1px, transparent 1px);
-    background-size: 48px 48px;
+      linear-gradient(to right, rgb(142 162 255 / 0.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(142 162 255 / 0.07) 1px, transparent 1px);
+    background-size: 56px 56px;
   }
 
   .surface-glow {
     background:
-      radial-gradient(1200px 500px at 10% -10%, rgb(142 162 255 / 0.16), transparent 55%),
-      radial-gradient(900px 420px at 100% 0%, rgb(94 234 212 / 0.08), transparent 50%),
+      radial-gradient(1100px 520px at 12% -8%, rgb(142 162 255 / 0.22), transparent 58%),
+      radial-gradient(800px 380px at 92% 6%, rgb(94 234 212 / 0.12), transparent 52%),
       var(--color-canvas);
   }
 

@@ -12,9 +12,13 @@ export function AuthLayout({
 }) {
   return (
     <div className="surface-glow min-h-screen lg:grid lg:grid-cols-[1.05fr_0.95fr]">
-      <section className="relative hidden overflow-hidden border-r border-line surface-grid lg:flex lg:flex-col lg:justify-between p-10">
-        <Logo />
-        <div className="max-w-lg">
+      <section className="relative hidden overflow-hidden border-r border-line-strong bg-[#0a0d16] surface-grid lg:flex lg:flex-col lg:justify-between p-10">
+        <div className="pointer-events-none absolute -left-24 top-20 size-[420px] rounded-full bg-accent/20 blur-3xl" />
+        <div className="pointer-events-none absolute bottom-10 right-0 size-72 rounded-full bg-signal/10 blur-3xl" />
+        <div className="relative">
+          <Logo />
+        </div>
+        <div className="relative max-w-lg">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-signal">
             Phase 12 · Command surface
           </p>
@@ -34,7 +38,7 @@ export function AuthLayout({
             ].map(([value, label]) => (
               <div
                 key={label}
-                className="rounded-xl border border-line bg-panel/70 px-3 py-3"
+                className="rounded-xl border border-line-strong bg-panel px-3 py-3 shadow-[0_10px_30px_-20px_rgb(142_162_255_/_0.6)]"
               >
                 <dt className="text-[11px] uppercase tracking-wide text-ink-faint">
                   {label}
@@ -46,7 +50,7 @@ export function AuthLayout({
             ))}
           </dl>
         </div>
-        <p className="text-xs text-ink-faint">
+        <p className="relative text-xs text-ink-faint">
           Backend: localhost:8080 · UI: localhost:5173 · CORS required
         </p>
       </section>
