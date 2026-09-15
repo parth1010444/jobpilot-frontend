@@ -1,8 +1,11 @@
 {
   "name": "jobpilot-frontend",
   "private": true,
-  "version": "0.12.0",
+  "version": "0.13.0",
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
